@@ -583,17 +583,11 @@ video {
 .h-80 {
   height: 20rem;
 }
-.h-screen {
-  height: 100vh;
-}
 .min-h-screen {
   min-height: 100vh;
 }
 .w-80 {
   width: 20rem;
-}
-.flex-1 {
-  flex: 1 1 0%;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -645,6 +639,9 @@ video {
 .p-2 {
   padding: 0.5rem;
 }
+.p-8 {
+  padding: 2rem;
+}
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -661,10 +658,6 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -672,6 +665,10 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .pb-2 {
   padding-bottom: 0.5rem;
@@ -681,12 +678,6 @@ video {
 }
 .text-center {
   text-align: center;
-}
-.text-right {
-  text-align: right;
-}
-.align-middle {
-  vertical-align: middle;
 }
 .font-burtons {
   font-family: burtons;
@@ -709,6 +700,12 @@ video {
 }
 .font-medium {
   font-weight: 500;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
 }
 .leading-8 {
   line-height: 2rem;
@@ -742,6 +739,11 @@ video {
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 
  
 body {
@@ -759,12 +761,10 @@ body {
   src:url(/_next/static/media/Burtons.f6e80b53.otf);
 }
 
-@media (prefers-color-scheme: dark) {
-
-  .dark\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
+.hover\:shadow-2xl:hover {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 768px) {
@@ -777,3 +777,4 @@ body {
     width: 24rem;
   }
 }
+
