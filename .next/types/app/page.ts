@@ -1,4 +1,4 @@
-// File: C:\Users\`Param\new life\New folder\portfolio-final\app\page.js
+// File: C:\Users\`Param\new life\New folder\portfolio-final - Copy\app\page.js
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
