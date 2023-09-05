@@ -557,8 +557,44 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
 .relative {
   position: relative;
+}
+.m-52 {
+  margin: 13rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -577,6 +613,9 @@ video {
 .mt-20 {
   margin-top: 5rem;
 }
+.inline-block {
+  display: inline-block;
+}
 .flex {
   display: flex;
 }
@@ -592,14 +631,14 @@ video {
 .cursor-pointer {
   cursor: pointer;
 }
-.items-center {
-  align-items: center;
-}
 .justify-center {
   justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-10 {
+  gap: 2.5rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -609,6 +648,10 @@ video {
 }
 .rounded-xl {
   border-radius: 0.75rem;
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -698,14 +741,14 @@ video {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.font-extrabold {
+  font-weight: 800;
+}
 .font-medium {
   font-weight: 500;
 }
 .font-bold {
   font-weight: 700;
-}
-.font-extrabold {
-  font-weight: 800;
 }
 .leading-8 {
   line-height: 2rem;
@@ -733,6 +776,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-yellow-500 {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -767,6 +814,11 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:shadow-black:hover {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 @media (min-width: 768px) {
 
   .md\:h-96 {
@@ -775,6 +827,13 @@ body {
 
   .md\:w-96 {
     width: 24rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .lg\:flex {
+    display: flex;
   }
 }
 

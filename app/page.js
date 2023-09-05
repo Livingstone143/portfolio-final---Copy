@@ -1,10 +1,13 @@
 import Image from 'next/image'
+import  App from '../Components/type';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
+import '../app/globals.css'
 import{AiFillTwitterCircle,AiFillLinkedin,AiFillInstagram,AiFillCodepenCircle} from 'react-icons/ai';
 import code from "../public/code.png";
 import design from "../public/design.png";
 import cons  from "../public/consulting.png";
 import me from '../public/me3.png';
+
 export default function Home() {
   return (
     <main className="bg-white px-10">
@@ -18,16 +21,17 @@ export default function Home() {
         </ul>
        </nav>
        <div className="text-center p-8 py-8">
+       
         <h2 className="text-5xl py-2 text-teal-700 font-medium">Param Jyothi</h2>
-        <h3 className="text-2xl py-2">Developer and designer</h3>
+        <h3 className="text-2xl py-2"><App/></h3>
         <p className='text-md py-5 leading-8 text-gray-800'>I am Passionate web developer with an open mindset and a flair for innovation. Ready to bring your ideas to life. Open for collaboration on exciting projects.</p>
        </div>
        <div className=" text-5xl flex justify-center gap=16 py-2 text-gray-600 "> 
-       <AiFillLinkedin/>
-       <AiFillInstagram/>
-       <AiFillTwitterCircle/>
-      <AiFillCodepenCircle/> </div>
-      <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+       <AiFillLinkedin className='hover:shadow-black'/>
+       <AiFillInstagram className='hover:shadow-2xl'/>
+       <AiFillTwitterCircle className='hover:shadow-2xl'/>
+      <AiFillCodepenCircle className='hover:shadow-2xl'/> </div>
+      <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 hover:shadow-2xl">
               <Image src={me} layout="fill" objectFit="cover" />
             </div>
     </section>
@@ -44,9 +48,9 @@ export default function Home() {
               for both business and consumer use
             </p>
       </div>
-       <div className='flex'>
-        <div className="text-center items-center  shadow-xl p-10 rounded-xl my-10 hover:shadow-2xl ">
-        <Image src={design}  />
+       <div className="lg:flex gap-10" >
+        <div className="text-center   shadow-xl p-10 rounded-xl my-10 hover:shadow-2xl ">
+        <Image src={design}  style={{ paddingLeft: '50' }} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Beautiful Designs
               </h3>
@@ -89,6 +93,13 @@ export default function Home() {
               <p className="text-gray-800 py-1">Indesign</p>
             </div>
             </div>
+    </section>
+
+    <section >
+    
+      <div>
+
+      </div>
     </section>
     </main>
   )
