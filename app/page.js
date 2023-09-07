@@ -2,16 +2,11 @@
 import Image from 'next/image'
 import  App from '../Components/type';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import '../app/globals.css';
 import{AiFillTwitterCircle,AiFillLinkedin,AiFillInstagram,AiFillCodepenCircle} from 'react-icons/ai';
 import code from "../public/code.png";
 import design from "../public/design.png";
 import cons  from "../public/consulting.png";
 import me from '../public/me3.png';
-import reactlogo from '../public/reactlogo.png';
-import threejs from '../public/logothreejs.png';
-import java from '../public/js.png';
-import { useState } from 'react';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -112,21 +107,6 @@ export default function Home() {
             </div>
             </div>
     </section>
-
-    <section >
-    
-      <div className=''>
-
-      </div>
-    </section>
-    
-      <div className='min-w-full h-80 shadow-2xl text-center pt-28 bg-slate-700' >
-       <h4 className='font-bold text-white font-burtons  animate-pulse'> Param Jyothi bura</h4>
-        <p className='font-bold text-white font-burtons '>Contact : 949033301</p>
-        <p className='font-bold text-white font-burtons '> Email: Paramalla2004@gmail.com</p>
-
-      </div>
-     
     </main>
     </div>
   )
